@@ -1,0 +1,23 @@
+<p>pianoindex works!</p>
+
+<div class="container">
+  <div class="navbar-piano">
+    <h2 class="piano-shop-france">Piano Shop France</h2>
+    <input class="seachbar-piano"[(ngModel)]="search" type="text" placeholder="rechercher"/>
+    <h2> Mon compte 🏠</h2>
+    <h2> Mon Panier 🎹</h2>
+  </div>
+  <div class="pianos" *ngIf="pianos; else benjamin">
+    <a [routerLink]="['/detail-piano', piano.id]" class="piano" *ngFor="let piano of filterPianos()">
+      <img class="photo-piano" [src]="piano.photos" alt="photo" />
+      <div class="piano-text-description">
+        <p>Marque : {{ piano.name }}</p>
+        <p>Modèle : {{ piano.brand }}</p>
+        <hr class="hr-piano" />
+        <p id="price-piano">Prix: {{ piano.price }} € TTC</p>
+        <br />
+      </div>
+    </a>
+  </div>
+  <ng-template #benjamin>coucou.</ng-template>
+</div>
