@@ -51,12 +51,11 @@
   color: orangered;
 }
 
-
-.piano-shop-france{
+.piano-shop-france {
   margin-left: 50px;
 }
 
-.seachbar-piano{
+.seachbar-piano {
   margin-left: 100px;
   margin-top: 15px;
   width: 300px;
@@ -67,13 +66,18 @@
   //justify-content: center;
 }
 
-.select-value-and-searchbar{
+.select-value-and-searchbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
+  margin-left: 25px;
 }
 
-.select-value{
+option:checked {
+  background-color: black;
+}
+
+.select-value {
   height: 29px;
   width: 300px;
   border-radius: 8px;
