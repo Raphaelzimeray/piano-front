@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class PianoindexComponent {
   pianos = null ;
+  selectedvalue ='default';
   search = '';
   constructor() {
     console.log('Etat 1', this.pianos);

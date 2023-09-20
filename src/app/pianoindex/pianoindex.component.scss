@@ -51,24 +51,34 @@
   color: orangered;
 }
 
-.navbar-piano{
-  height: 120px;
-  background-color: black;
-  border-radius: 8px;
-  color: white;
-  display:grid;
-  grid-auto-flow: column;
-  gap: 2px;
-  align-items: center;
-}
 
 .piano-shop-france{
   margin-left: 50px;
 }
 
 .seachbar-piano{
-  margin-right: 20px;
+  margin-left: 100px;
+  margin-top: 15px;
+  width: 300px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  height: 25px;
+  //display: flex;
+  //justify-content: center;
 }
 
+.select-value-and-searchbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.select-value{
+  height: 29px;
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  margin-top: 18px;
+}
 // @media (min-width: 750px) {...}
 // @media (max-width: 710px) {...}

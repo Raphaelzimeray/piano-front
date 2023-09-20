@@ -70,5 +70,17 @@
   margin-right: 20px;
 }
 
+.know-more-detail{
+  width: 1px;
+  height: 50px;
+  background-color: black;
+  margin-left: 12px;
+}
+
+.h3-and-know-more-detail{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 // @media (min-width: 750px) {...}
 // @media (max-width: 710px) {...}

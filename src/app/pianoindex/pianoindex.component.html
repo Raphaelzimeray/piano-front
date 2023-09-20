@@ -1,15 +1,19 @@
 <p>pianoindex works!</p>
 
 <div class="container">
-  <div class="navbar-piano">
-    <h2 class="piano-shop-france">Piano Shop France</h2>
+  <div class="select-value-and-searchbar">
+    <select class="select-value" [(ngModel)]="selectedvalue" required>
+      <option value="default" selected>--</option>
+      <option value="mostexpensive">Le plus cher</option>
+      <option value="lessexpensive">Le moins cher</option>
+      <option value="alphabet">de A à Z</option>
+      <option value="alphabetdesc">de Z à A</option>
+      <option value="stock">En stock</option>
+    </select>
     <input class="seachbar-piano"[(ngModel)]="search" type="text" placeholder="rechercher"/>
-    <h2> Mon compte 🏠</h2>
-    <h2> Mon Panier 🎹</h2>
   </div>
   <div class="pianos" *ngIf="pianos; else benjamin">
-    <a [routerLink]="['/detail-piano', piano.id]" class="piano" *ngFor="let piano of filterPianos()">
-      <img class="photo-piano" [src]="piano.photos" alt="photo" />
+    <a [routerLink]="['/detail-piano', piano.id]" class="piano" *ngFor="let piano of filterPianos()">      <img class="photo-piano" [src]="piano.photos" alt="photo" />
       <div class="piano-text-description">
         <p>Marque : {{ piano.name }}</p>
         <p>Modèle : {{ piano.brand }}</p>

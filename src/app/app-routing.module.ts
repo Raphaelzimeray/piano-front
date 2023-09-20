@@ -5,7 +5,7 @@ import { PianoindexComponent } from './pianoindex/pianoindex.component';
 
 const routes: Routes = [
   { path: 'detail-piano/:id', component: DetailpianoComponent},
-  { path: 'piano-index', component: PianoindexComponent}
+  { path: '', component: PianoindexComponent}
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

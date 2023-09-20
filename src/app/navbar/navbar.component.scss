@@ -1,0 +1,10 @@
+.navbar-piano{
+  height: 120px;
+  background-color: black;
+  border-radius: 8px;
+  color: white;
+  display:grid;
+  grid-auto-flow: column;
+  gap: 2px;
+  align-items: center;
+}
