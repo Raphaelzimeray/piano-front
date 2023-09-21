@@ -1,9 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
-
-* {
-  font-family: "Mooli", sans-serif;
-}
-
 .pianos {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -73,7 +67,7 @@
   margin-left: 25px;
 }
 
-option:checked {
+option:checked, option:hover {
   background-color: black;
 }
 

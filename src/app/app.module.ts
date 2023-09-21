@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { DetailpianoComponent } from './detailpiano/detailpiano.component';
 import { PianoindexComponent } from './pianoindex/pianoindex.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     DetailpianoComponent,
     PianoindexComponent,
     NavbarComponent,
+    AdminComponent,
   ],
   imports: [
     BrowserModule,

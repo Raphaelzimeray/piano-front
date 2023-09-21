@@ -23,7 +23,7 @@ export class PianoindexComponent {
     // @ts-expect-error
     return this.pianos
       .filter((p:any) =>
-        p.name.toLocaleLowerCase().includes(this.search.toLocaleLowerCase())
+        p.name?.toLocaleLowerCase().includes(this.search?.toLocaleLowerCase())
       )
       .sort( (a: any, b: any) => {
         if(this.selectedvalue === 'mostexpensive'){
