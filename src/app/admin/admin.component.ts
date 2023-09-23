@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin',
@@ -12,8 +13,9 @@ export class AdminComponent {
   color = '';
   photos = '';
   description = '';
-  onSubmit() {
-    fetch('http://localhost:3000/pianos', {
+  constructor(private router: Router){}
+  async onSubmit() {
+    await fetch('http://localhost:3000/pianos', { // attendre que le fetch soit terminé et ensuite il passe a la ligne en dessous
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -27,6 +29,14 @@ export class AdminComponent {
         description: this.description,
       }),
     });
+    this.goToIndexPiano();
     // Do login here
   }
+
+  goToIndexPiano(): void
+  {
+    this.router.navigate([''])
+  }
+
+
 }

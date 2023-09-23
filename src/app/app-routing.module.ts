@@ -6,7 +6,7 @@ import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
   { path: 'admin', component: AdminComponent},
-  { path: 'detail-piano/:id', component: DetailpianoComponent},
+  { path:'detail-piano/:id',component:DetailpianoComponent },
   { path: '', component: PianoindexComponent}
 ]
 @NgModule({
