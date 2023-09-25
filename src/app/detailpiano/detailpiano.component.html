@@ -1,5 +1,3 @@
-<p>detailpiano works!</p>
-<p>{{pianoId}}</p>
 <div class="pianos" *ngIf="piano">
   <div class="piano">
     <img class="photo-piano" [src]="piano.photos" alt="photo" />
@@ -11,18 +9,18 @@
       <br />
     </div>
   </div>
-  <div class="detail-piano-text">
-  </div>
+  <div class="detail-piano-text"></div>
 </div>
 <div class="text-description-detail-piano" *ngIf="piano">
   <div class="h3-and-know-more-detail">
-    <h3 class="h3-detail-piano"> A propos de ce piano </h3>
-    <div class="know-more-detail">
-    </div>
+    <h3 class="h3-detail-piano">A propos de ce piano</h3>
+    <div class="know-more-detail"></div>
   </div>
-  <hr>
+  <hr />
   <p>{{ piano.description }}</p>
-  <div class="delete-piano">
-    <button (click) ="deletepiano()"> Supprimer ce piano de la liste</button>
+  <div class="delete-piano-parent">
+    <button class="btn delete-piano" (click)="deletepiano()">Supprimer ce piano de la liste</button>
+
+    <a class="btn edit-piano" [routerLink]="['/edit-admin-piano/', piano.id]"> Modifier les informations</a>
   </div>
 </div>

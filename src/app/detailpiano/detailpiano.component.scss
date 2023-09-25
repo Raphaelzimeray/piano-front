@@ -75,12 +75,45 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
-  .delete-piano{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 }
+
+.delete-piano{
+
+}
+
+.delete-piano-parent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit-piano{
+  text-decoration: none;
+  background-color: #465775;
+  color: white;
+}
+
+
+.btn{
+  text-decoration: none;
+  display: block;
+  justify-content: center;
+  //color: gray;
+  border-radius: 8px;
+  border: 1px solid gray;
+  font-size: 15px;
+  padding: 10px;
+  margin-bottom: 30px;
+  min-width: 250px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.delete-piano{
+  background-color: #A44200;
+  color: white;
+}
+
+
 // @media (min-width: 750px) {...}
 // @media (max-width: 710px) {...}

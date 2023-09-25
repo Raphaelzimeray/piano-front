@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+
+.h1-administration{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.h3-form-edit-piano{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-add-piano{
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  padding-right: 180px;
+  padding-left: 180px;
+}
+
+.form-add-piano > *{
+  padding: 15px;
+  margin-bottom: 15px;
+}

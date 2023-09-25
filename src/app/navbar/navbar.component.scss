@@ -3,8 +3,8 @@
   background-color: black;
   border-radius: 8px;
   color: white;
-  display:grid;
-  grid-auto-flow: column;
+  display:flex;
+  justify-content: space-evenly;
   gap: 2px;
   align-items: center;
 }

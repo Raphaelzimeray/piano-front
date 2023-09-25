@@ -8,6 +8,7 @@ import { DetailpianoComponent } from './detailpiano/detailpiano.component';
 import { PianoindexComponent } from './pianoindex/pianoindex.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AdminComponent } from './admin/admin.component';
+import { EditpianoadminComponent } from './editpianoadmin/editpianoadmin.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { AdminComponent } from './admin/admin.component';
     PianoindexComponent,
     NavbarComponent,
     AdminComponent,
+    EditpianoadminComponent,
   ],
   imports: [
     BrowserModule,

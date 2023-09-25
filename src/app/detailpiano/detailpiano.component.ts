@@ -23,7 +23,7 @@ export class DetailpianoComponent {
       });
   }
 
-  async deletepiano() {
+  async deletepiano(){
     console.log('bouton de la suppression fonctionne! pour le piano numero',this.pianoId)
     let result = confirm("Etes vous sur de vouloir supprimer le piano ?")
     await fetch('http://localhost:3000/pianos/'+this.pianoId,{
@@ -37,4 +37,6 @@ export class DetailpianoComponent {
   {
     this.router.navigate([''])
   }
+
+  
 }

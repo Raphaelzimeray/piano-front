@@ -1,0 +1,14 @@
+<h1 class="h1-administration"> Administration </h1>
+<br>
+<h3 class="h3-form-edit-piano"> Formulaire de modification du piano</h3>
+<br>
+<br>
+  <form class="form-add-piano"(ngSubmit)="onSubmit()">
+    <input type="text" placeholder="name" name="name" [(ngModel)]= "piano.name">
+    <input type="number" placeholder="price" name="price" [(ngModel)] = "piano.price">
+    <input type="text" placeholder="brand" name ="brand" [(ngModel)] = "piano.brand">
+    <input type="text" placeholder="color" name="color" [(ngModel)]  = "piano.color">
+    <input type="text" placeholder="description" name="description" [(ngModel)] = "piano.description">
+    <input type="text" placeholder="photos" name="photos" [(ngModel)] = "piano.photos">
+    <button type="submit"> Enregistrer les modifications</button>
+  </form>
