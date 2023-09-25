@@ -25,3 +25,23 @@
   padding: 15px;
   margin-bottom: 15px;
 }
+
+@media(min-width:500px){
+  .form-add-piano{
+    padding-right: 8vw;
+    padding-left: 8vw;
+  }
+}
+
+@media(min-width:760px){
+  .form-add-piano{
+    padding-right: 15vw;
+    padding-left: 15vw;
+  }
+}
+
+// mobile => 300/400px
+
+//ipad => 760px
+
+//destop => 1000px

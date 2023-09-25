@@ -13,7 +13,7 @@
   text-align: center;
 }
 
-.form-add-piano{
+.form-edit-piano{
   display: flex;
   align-items: stretch;
   flex-direction: column;
@@ -21,7 +21,21 @@
   padding-left: 2vw;
 }
 
-.form-add-piano > *{
+.form-edit-piano > *{
   padding: 15px;
   margin-bottom: 15px;
+}
+
+@media(min-width:500px){
+  .form-edit-piano{
+    padding-right: 8vw;
+    padding-left: 8vw;
+  }
+}
+
+@media(min-width:760px){
+  .form-edit-piano{
+    padding-right: 15vw;
+    padding-left: 15vw;
+  }
 }
