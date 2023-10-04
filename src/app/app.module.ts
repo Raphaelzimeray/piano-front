@@ -4,11 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { DetailpianoComponent } from './detailpiano/detailpiano.component';
-import { PianoindexComponent } from './pianoindex/pianoindex.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { DetailpianoComponent } from './pages/pianos/detailpiano/detailpiano.component';
+import { PianoindexComponent } from './pages/pianos/pianoindex.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { AdminComponent } from './admin/admin.component';
-import { EditpianoadminComponent } from './editpianoadmin/editpianoadmin.component';
+import { EditpianoadminComponent } from './pages/pianos/editpianoadmin/editpianoadmin.component';
+import { CurrencyPipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -19,12 +20,8 @@ import { EditpianoadminComponent } from './editpianoadmin/editpianoadmin.compone
     AdminComponent,
     EditpianoadminComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, CurrencyPipe],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -26,7 +26,11 @@
         <p>Marque : {{ piano.brand }}</p>
         <p>Modèle : {{ piano.name }}</p>
         <hr class="hr-piano" />
-        <p id="price-piano">Prix: {{ piano.price }} € TTC</p>
+        <p id="price-piano">
+          Prix:
+          {{ piano.price | currency : "EUR" : "symbol" : "2.0-0" }}
+          TTC
+        </p>
         <br />
       </div>
     </a>
